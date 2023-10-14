@@ -14,12 +14,12 @@ public class RegistrationTest extends BaseTest {
 	String file = "src/test/resources/registration.xlsx";
 	String sheetName = "Sheet1";
 
-	@BeforeMethod
+	@BeforeMethod(groups={"Smoke","Regression"})
 	public void openFacebook() {
 		openApp();
 	}
 
-	@Test
+	@Test(priority=0, groups="Smoke")
 	public void faruqRegistrationTest() {
 		regPage = new RegistrationPage(driver);
 		regPage.createNewAccountButton();
@@ -36,7 +36,7 @@ public class RegistrationTest extends BaseTest {
 		regPage.radioButton(exReader.getStringCellValue(1, 8));
 	}
 	
-	@Test
+	@Test(priority=1, groups="Regression")
 	public void fabihaRegistrationTest() {
 		regPage = new RegistrationPage(driver);
 		regPage.createNewAccountButton();
@@ -53,24 +53,9 @@ public class RegistrationTest extends BaseTest {
 		regPage.radioButton(exReader.getStringCellValue(2, 8));
 	}
 	
-	@Test
-	public void faizaRegistrationTest() {
-		regPage = new RegistrationPage(driver);
-		regPage.createNewAccountButton();
-		exReader = new ExcelReader(file, sheetName);
-		String fName = exReader.getStringCellValue(3, 0);
-		regPage.firstNameField(fName);
-		regPage.lastNameField(exReader.getStringCellValue(3, 1));
-		regPage.emailField(exReader.getStringCellValue(3, 2));
-		regPage.reEnterEmail(exReader.getStringCellValue(3, 3));
-		regPage.passwordField(exReader.getStringCellValue(3, 4));
-		regPage.monthDropDownField(exReader.getStringCellValue(3, 5));
-		regPage.dayDropDownField(exReader.getStringCellValue(3, 6));
-		regPage.yearDropDownField(exReader.getStringCellValue(3, 7));
-		regPage.radioButton(exReader.getStringCellValue(3, 8));
-	}
+	
 
-	@AfterMethod
+	@AfterMethod(groups={"Smoke","Regression"})
 	public void closeFacebook() {
 	 closeApp();
 	}
