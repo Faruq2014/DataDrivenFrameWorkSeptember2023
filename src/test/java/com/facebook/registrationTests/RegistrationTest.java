@@ -1,5 +1,7 @@
 package com.facebook.registrationTests;
 
+import org.testng.Assert;
+import org.testng.SkipException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -51,6 +53,15 @@ public class RegistrationTest extends BaseTest {
 		regPage.dayDropDownField(exReader.getStringCellValue(2, 6));
 		regPage.yearDropDownField(exReader.getStringCellValue(2, 7));
 		regPage.radioButton(exReader.getStringCellValue(2, 8));
+		String actualTitle="heelooo";
+		String expentedTitle=driver.getTitle();
+		Assert.assertEquals(actualTitle, expentedTitle);
+	}
+	
+	@Test(priority=2, groups="Regression",dependsOnMethods="fabihaRegistrationTest")
+	public void testSkipped() {
+		//throw new SkipException("Skipping this exception");
+		//System.out.println("hello");
 	}
 	
 	

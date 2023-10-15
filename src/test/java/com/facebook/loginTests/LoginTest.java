@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 import com.facebook.base.BaseTest;
 import com.facebook.loginPages.LoginPage;
 import com.facebook.utilities.PropertiesReader;
+import com.facebook.utilities.ScreenShot;
 
 public class LoginTest extends BaseTest{
 	
@@ -29,13 +30,22 @@ public class LoginTest extends BaseTest{
 		openApp();
 			}
 
-	@Test(priority=0)
+	@Test(priority=0,groups="Smoke")
 	public void loginTest() {
 		propertiesReader=new PropertiesReader();
 		loginPage = new LoginPage(driver);
 		loginPage.userNameMethod(propertiesReader.getUserName());
 		loginPage.passWordMethod(propertiesReader.getPassword());
 		loginPage.logingButton();
+		try {
+			//LoginPage sc= new LoginPage(driver);
+			ScreenShot sc= new ScreenShot();
+			sc.screenShot("login");
+		} catch (Exception e) {
+		
+			e.printStackTrace();
+		}
+		
 				
 	}
 	
