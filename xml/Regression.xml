@@ -6,6 +6,10 @@
 			<include name="Regression"></include>
 		</run>
 	</groups>
+	<listeners>
+		<listener
+			class-name="com.facebook.listeners.FacebookListener"></listener>
+	</listeners> 
   <test  name="Test">
     <classes>
       <class name="com.facebook.registrationTests.RegistrationTest2"/>
