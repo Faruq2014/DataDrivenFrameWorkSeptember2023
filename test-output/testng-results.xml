@@ -1,29 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="5" total="9" passed="2" failed="1" skipped="1">
+<testng-results ignored="0" total="4" passed="2" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-15T13:27:30 EDT" name="Regression Suite" finished-at="2023-10-15T13:27:43 EDT" duration-ms="12939">
+  <suite started-at="2023-10-21T10:31:17 EDT" name="Registration Suite" finished-at="2023-10-21T10:31:32 EDT" duration-ms="15531">
     <groups>
       <group name="Sprint3">
-        <method signature="RegistrationTest2.faizaRegistrationTest()[pri:0, instance:com.facebook.registrationTests.RegistrationTest2@41d477ed]" name="faizaRegistrationTest" class="com.facebook.registrationTests.RegistrationTest2"/>
+        <method signature="RegistrationTest2.faizaRegistrationTest()[pri:0, instance:com.facebook.registrationTests.RegistrationTest2@6c6cb480]" name="faizaRegistrationTest" class="com.facebook.registrationTests.RegistrationTest2"/>
       </group> <!-- Sprint3 -->
       <group name="Regression">
-        <method signature="LoginTest.loginTest1()[pri:1, instance:com.facebook.loginTests.LoginTest@6150c3ec]" name="loginTest1" class="com.facebook.loginTests.LoginTest"/>
-        <method signature="RegistrationTest.fabihaRegistrationTest()[pri:1, instance:com.facebook.registrationTests.RegistrationTest@1573f9fc]" name="fabihaRegistrationTest" class="com.facebook.registrationTests.RegistrationTest"/>
-        <method signature="RegistrationTest.testSkipped()[pri:2, instance:com.facebook.registrationTests.RegistrationTest@1573f9fc]" name="testSkipped" class="com.facebook.registrationTests.RegistrationTest"/>
-        <method signature="RegistrationTest2.faizaRegistrationTest()[pri:0, instance:com.facebook.registrationTests.RegistrationTest2@41d477ed]" name="faizaRegistrationTest" class="com.facebook.registrationTests.RegistrationTest2"/>
+        <method signature="RegistrationTest2.faizaRegistrationTest()[pri:0, instance:com.facebook.registrationTests.RegistrationTest2@6c6cb480]" name="faizaRegistrationTest" class="com.facebook.registrationTests.RegistrationTest2"/>
+        <method signature="RegistrationTest.fabihaRegistrationTest()[pri:1, instance:com.facebook.registrationTests.RegistrationTest@a1153bc]" name="fabihaRegistrationTest" class="com.facebook.registrationTests.RegistrationTest"/>
+        <method signature="RegistrationTest.testSkipped()[pri:2, instance:com.facebook.registrationTests.RegistrationTest@a1153bc]" name="testSkipped" class="com.facebook.registrationTests.RegistrationTest"/>
       </group> <!-- Regression -->
       <group name="Smoke">
-        <method signature="RegistrationTest2.faizaRegistrationTest()[pri:0, instance:com.facebook.registrationTests.RegistrationTest2@41d477ed]" name="faizaRegistrationTest" class="com.facebook.registrationTests.RegistrationTest2"/>
+        <method signature="RegistrationTest.faruqRegistrationTest()[pri:0, instance:com.facebook.registrationTests.RegistrationTest@a1153bc]" name="faruqRegistrationTest" class="com.facebook.registrationTests.RegistrationTest"/>
+        <method signature="RegistrationTest2.faizaRegistrationTest()[pri:0, instance:com.facebook.registrationTests.RegistrationTest2@6c6cb480]" name="faizaRegistrationTest" class="com.facebook.registrationTests.RegistrationTest2"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2023-10-15T13:27:30 EDT" name="Test" finished-at="2023-10-15T13:27:43 EDT" duration-ms="12939">
+    <test started-at="2023-10-21T10:31:17 EDT" name="Registration Test" finished-at="2023-10-21T10:31:32 EDT" duration-ms="15531">
       <class name="com.facebook.registrationTests.RegistrationTest">
-        <test-method is-config="true" signature="openFacebook()[pri:0, instance:com.facebook.registrationTests.RegistrationTest@1573f9fc]" started-at="2023-10-15T13:27:34 EDT" name="openFacebook" finished-at="2023-10-15T13:27:36 EDT" duration-ms="1513" status="PASS">
+        <test-method is-config="true" signature="openFacebook()[pri:0, instance:com.facebook.registrationTests.RegistrationTest@a1153bc]" started-at="2023-10-21T10:31:17 EDT" name="openFacebook" finished-at="2023-10-21T10:31:22 EDT" duration-ms="4765" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openFacebook -->
-        <test-method signature="fabihaRegistrationTest()[pri:1, instance:com.facebook.registrationTests.RegistrationTest@1573f9fc]" started-at="2023-10-15T13:27:36 EDT" name="fabihaRegistrationTest" finished-at="2023-10-15T13:27:37 EDT" duration-ms="1447" status="FAIL">
+        <test-method signature="faruqRegistrationTest()[pri:0, instance:com.facebook.registrationTests.RegistrationTest@a1153bc]" started-at="2023-10-21T10:31:22 EDT" name="faruqRegistrationTest" finished-at="2023-10-21T10:31:23 EDT" duration-ms="1684" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- faruqRegistrationTest -->
+        <test-method is-config="true" signature="closeFacebook()[pri:0, instance:com.facebook.registrationTests.RegistrationTest@a1153bc]" started-at="2023-10-21T10:31:23 EDT" name="closeFacebook" finished-at="2023-10-21T10:31:24 EDT" duration-ms="160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeFacebook -->
+        <test-method is-config="true" signature="openFacebook()[pri:0, instance:com.facebook.registrationTests.RegistrationTest@a1153bc]" started-at="2023-10-21T10:31:24 EDT" name="openFacebook" finished-at="2023-10-21T10:31:25 EDT" duration-ms="1448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openFacebook -->
+        <test-method signature="fabihaRegistrationTest()[pri:1, instance:com.facebook.registrationTests.RegistrationTest@a1153bc]" started-at="2023-10-21T10:31:25 EDT" name="fabihaRegistrationTest" finished-at="2023-10-21T10:31:26 EDT" duration-ms="1247" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Facebook - log in or sign up] but found [heelooo]]]>
@@ -71,19 +83,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fabihaRegistrationTest -->
-        <test-method is-config="true" signature="closeFacebook()[pri:0, instance:com.facebook.registrationTests.RegistrationTest@1573f9fc]" started-at="2023-10-15T13:27:39 EDT" name="closeFacebook" finished-at="2023-10-15T13:27:39 EDT" duration-ms="181" status="PASS">
+        <test-method is-config="true" signature="closeFacebook()[pri:0, instance:com.facebook.registrationTests.RegistrationTest@a1153bc]" started-at="2023-10-21T10:31:28 EDT" name="closeFacebook" finished-at="2023-10-21T10:31:28 EDT" duration-ms="139" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeFacebook -->
-        <test-method signature="testSkipped()[pri:2, instance:com.facebook.registrationTests.RegistrationTest@1573f9fc]" started-at="2023-10-15T13:27:39 EDT" name="testSkipped" finished-at="2023-10-15T13:27:39 EDT" depends-on-methods="com.facebook.registrationTests.RegistrationTest.fabihaRegistrationTest" duration-ms="0" status="SKIP">
+        <test-method signature="testSkipped()[pri:2, instance:com.facebook.registrationTests.RegistrationTest@a1153bc]" started-at="2023-10-21T10:31:28 EDT" name="testSkipped" finished-at="2023-10-21T10:31:28 EDT" depends-on-methods="com.facebook.registrationTests.RegistrationTest.fabihaRegistrationTest" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method com.facebook.registrationTests.RegistrationTest.testSkipped() on instance com.facebook.registrationTests.RegistrationTest@1573f9fc depends on not successfully finished methods 
-[com.facebook.registrationTests.RegistrationTest.fabihaRegistrationTest() on instance com.facebook.registrationTests.RegistrationTest@1573f9fc]]]>
+              <![CDATA[Method com.facebook.registrationTests.RegistrationTest.testSkipped() on instance com.facebook.registrationTests.RegistrationTest@a1153bc depends on not successfully finished methods 
+[com.facebook.registrationTests.RegistrationTest.fabihaRegistrationTest() on instance com.facebook.registrationTests.RegistrationTest@a1153bc]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.facebook.registrationTests.RegistrationTest.testSkipped() on instance com.facebook.registrationTests.RegistrationTest@1573f9fc depends on not successfully finished methods 
-[com.facebook.registrationTests.RegistrationTest.fabihaRegistrationTest() on instance com.facebook.registrationTests.RegistrationTest@1573f9fc]
+              <![CDATA[java.lang.Throwable: Method com.facebook.registrationTests.RegistrationTest.testSkipped() on instance com.facebook.registrationTests.RegistrationTest@a1153bc depends on not successfully finished methods 
+[com.facebook.registrationTests.RegistrationTest.fabihaRegistrationTest() on instance com.facebook.registrationTests.RegistrationTest@a1153bc]
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -111,33 +123,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- testSkipped -->
       </class> <!-- com.facebook.registrationTests.RegistrationTest -->
       <class name="com.facebook.registrationTests.RegistrationTest2">
-        <test-method is-config="true" signature="openFacebook()[pri:0, instance:com.facebook.registrationTests.RegistrationTest2@41d477ed]" started-at="2023-10-15T13:27:30 EDT" name="openFacebook" finished-at="2023-10-15T13:27:32 EDT" duration-ms="2590" status="PASS">
+        <test-method is-config="true" signature="openFacebook()[pri:0, instance:com.facebook.registrationTests.RegistrationTest2@6c6cb480]" started-at="2023-10-21T10:31:30 EDT" name="openFacebook" finished-at="2023-10-21T10:31:31 EDT" duration-ms="1521" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openFacebook -->
-        <test-method signature="faizaRegistrationTest()[pri:0, instance:com.facebook.registrationTests.RegistrationTest2@41d477ed]" started-at="2023-10-15T13:27:32 EDT" name="faizaRegistrationTest" finished-at="2023-10-15T13:27:34 EDT" duration-ms="1559" status="PASS">
+        <test-method signature="faizaRegistrationTest()[pri:0, instance:com.facebook.registrationTests.RegistrationTest2@6c6cb480]" started-at="2023-10-21T10:31:31 EDT" name="faizaRegistrationTest" finished-at="2023-10-21T10:31:32 EDT" duration-ms="1154" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- faizaRegistrationTest -->
-        <test-method is-config="true" signature="closeFacebook()[pri:0, instance:com.facebook.registrationTests.RegistrationTest2@41d477ed]" started-at="2023-10-15T13:27:34 EDT" name="closeFacebook" finished-at="2023-10-15T13:27:34 EDT" duration-ms="186" status="PASS">
+        <test-method is-config="true" signature="closeFacebook()[pri:0, instance:com.facebook.registrationTests.RegistrationTest2@6c6cb480]" started-at="2023-10-21T10:31:32 EDT" name="closeFacebook" finished-at="2023-10-21T10:31:32 EDT" duration-ms="113" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeFacebook -->
       </class> <!-- com.facebook.registrationTests.RegistrationTest2 -->
-      <class name="com.facebook.loginTests.LoginTest">
-        <test-method is-config="true" signature="openFacebook()[pri:0, instance:com.facebook.loginTests.LoginTest@6150c3ec]" started-at="2023-10-15T13:27:41 EDT" name="openFacebook" finished-at="2023-10-15T13:27:42 EDT" duration-ms="1593" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openFacebook -->
-        <test-method signature="loginTest1()[pri:1, instance:com.facebook.loginTests.LoginTest@6150c3ec]" started-at="2023-10-15T13:27:42 EDT" name="loginTest1" finished-at="2023-10-15T13:27:42 EDT" duration-ms="136" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest1 -->
-        <test-method is-config="true" signature="closeFacebook()[pri:0, instance:com.facebook.loginTests.LoginTest@6150c3ec]" started-at="2023-10-15T13:27:42 EDT" name="closeFacebook" finished-at="2023-10-15T13:27:43 EDT" duration-ms="188" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeFacebook -->
-      </class> <!-- com.facebook.loginTests.LoginTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Regression Suite -->
+    </test> <!-- Registration Test -->
+  </suite> <!-- Registration Suite -->
 </testng-results>
